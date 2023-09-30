@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <audio id="audio" src=""></audio>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play play-pause player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="volume-toggle volume-icon"></button>
+        <input type="range" class="volume-slider" min="0" max="100" value="50">
+      </div>
+      <div class="track-info">
+        <span class="track-name"></span>
+        <span class="time-info"></span>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <div class="city" contenteditable="true">Minsk</div>
+      <i class="weather-icon owf"></i>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind-speed"></div>
+      <div class="humidity"></div>
+
+    </div>
+
+  </header>
+  <main class="main">
+    <div id="clock" class="time">
+      <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+    </div>
+    <div id="date" class="date">
+      <span></span>
+    </div>
+    <div class="greeting-block">
+      <div class="greeting-container">
+        <span id="greeting" class="greeting"></span>
+        <input type="text" id="name" class="name" placeholder="[Enter name]" />
+      </div>
+    </div>
+
+    <div class="background-image-container">
+      <div id="arrow-left" class="background-image-arrow background-image-arrow-left"></div>
+      <div id="arrow-right" class="background-image-arrow background-image-arrow-right"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
